@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    background: rgb(33,213,215);
+    background: linear-gradient(0deg, rgba(33,213,215,1) 0%, rgba(137,101,195,1) 51%, rgba(212,19,228,1) 100%);
+}
+body{
+    font-family: 'PTSans'; 
+    overflow-y: hidden;       
+}
+.container{   
+    position: relative;
+    background-color:white;
+    width: 90%;
+    min-height: 90vh;
+    margin: 5vh auto;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-radius:8px;
+    display: grid;
+    grid-template-columns:50% 50%;   
+}
+.leftside{
+    z-index: 2;
+    background:rgba(190, 253, 255, 0.842);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.content{
+    background:rgba(190, 253, 255, 0.842);
+    width: 80%;
+    color:rgb(131, 72, 228) ;
+    display: grid;
+    justify-content: center;
+    margin-top:25%;
+    grid-template-columns:70%;
+}
+.content h1{
+    font-size: 48px;
+}
+.content h2{
+    color: rgb(220, 9, 240);
+}
+.content p{
+    font-size: 20px;
+    padding: 18px 0;
+    font-weight: 300;
+
+}
+.content .btn{
+    margin-top:25px;
+}
+.content a{
+    display: inline-block;
+    padding: 15px 45px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.content a.color1{
+    background-color:rgb(220, 9, 240);
+    ;
+}
+.content a.color1:hover{
+    background-color:rgb(131, 72, 228);
+    ;
+}
+.rightside{
+    z-index: 2;
+    background:#fff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+   
+}
+.rightside img{  
+   padding-top: 40px;
+   width:100%;
+   display: block;
+   margin: 8% auto;
+    
+}
+header{
+    z-index: 500;
+    position:fixed;
+    height:60px;
+    width:90%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+header .logo{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(189, 20, 204);
+    display: flex;
+    align-items:center;
+    padding-left: 40px;
+
+    
+}
+header .menu{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.menu-link{
+    text-decoration: none;
+    font-size:24px;
+    color: rgba(212,19,228,1);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+  @media (max-width: 1000px) {
+    .menu-link {
+        font-size:18px;
+    }
+    .rightside img{
+        break-inside: avoid;
+        margin: 30% auto;
+    }
+  }
+  @media (max-width: 740px) {
+    .menu-link {
+        font-size:14px;
+        font-weight: bold;
+    }
+    .rightside img{
+        break-inside: avoid;
+        margin: 40% auto;
+    }
+  }
+  @media (max-width: 590px) {
+    .menu-link {
+        font-size:10px;
+        font-weight: bolder;
+    }
+    .rightside img{
+        break-inside: avoid;
+        margin: 50% auto;
+    }
+  }
+ 
+
+  
